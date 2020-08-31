@@ -15,10 +15,6 @@ npm run lint
 standard --fix 
 ```
 
-### Test Deployment Website
-[ufotablecafe.fwdev.online](http://ufotablecafe.fwdev.online/)
-
-
 ### FLow of this REST API
 ```
 Flowchart REST API Cafe.jpg 
@@ -52,3 +48,6 @@ Express.JS
 ```
 Rest API Cafe.postman_collection.json
 ```
+
+### Test Deployment Website
+[ufotablecafe.fwdev.online](http://ufotablecafe.fwdev.online/)
