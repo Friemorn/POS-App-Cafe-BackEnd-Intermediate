@@ -1,12 +1,41 @@
 # POS-App-Cafe-BackEnd
 
-► FLow of this REST API App can be seen at Flowchart REST API Cafe.jpg
+### Compiles and hot-reloads for development
+```
+npm run dev
+```
 
-► This app is using Node.JS
+### Lints and fixes files
+```
+npm run lint 
+```
 
-► This app using framework Express.JS
+### Use standard to fixes files
+```
+standard --fix 
+```
 
-► NPM package for this app is :
+### Test Deployment Website
+[ufotablecafe.fwdev.online](http://ufotablecafe.fwdev.online/)
+
+
+### FLow of this REST API
+```
+Flowchart REST API Cafe.jpg 
+```
+
+### Technology
+```
+Node.JS 
+```
+
+### Framework
+```
+Express.JS
+```
+
+### NPM package for this app
+```
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -17,5 +46,9 @@
     "multer": "^1.4.2",
     "mysql2": "^2.1.0",
     "redis": "^3.0.2"
+```
 
-► For testing you can using Postman and the collection files can be seen at "Rest API Cafe.postman_collection.json"
+### For testing you can using Postman and the collection files
+```
+Rest API Cafe.postman_collection.json
+```
