@@ -14,20 +14,20 @@ const storage = multer.diskStorage({
 function upload (req, res, next) {
   const uploadFile = multer({
     storage: storage,
-    limits: { fileSize: 100000 },
+    limits: { fileSize: 1048576 },
     fileFilter: function (req, file, cb) {
       const extFile = path.extname(file.originalname)
       if (extFile === '.jpeg' || extFile === '.jpg' || extFile === '.png') {
         cb(null, true)
       } else {
-        cb('Image Only!', false)
+        cb('Error', false)
       }
     }
   }).single('image')
 
   uploadFile(req, res, function (err) {
     if (err) {
-      if (err == 'Image Only!') {
+      if (err == 'Error') {
         return helpers.res(res, { message: 'Only Images with Extentions (jpeg/jpg/png) are Allowed' }, 403)
       } else {
         return helpers.res(res, { message: 'File Too Large' }, 403)

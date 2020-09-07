@@ -10,7 +10,7 @@ const product = {
         if (result.length > 0) {
           helper.res(res, result, 200, null)
         } else {
-          helper.res(res, 'Product Not Found', 200, null)
+          helper.res(res, [], 404, null)
         }
       })
       .catch((err) => {
@@ -47,32 +47,32 @@ const product = {
         .then((result) => {
           if (end < countSearch) {
             next = {
-              'next page': page + 1,
-              'next url': `http://localhost:4000/api/v1/product?search=${search}&page=${page + 1}&limit=${limit}`
+              'nextPage': page + 1,
+              'nextUrl': `http://localhost:4000/api/v1/product?search=${search}&page=${page + 1}&limit=${limit}`
             }
           }
 
           if (offset > 0) {
             previous = {
-              'previous page': page - 1,
-              'previous url': `http://localhost:4000/api/v1/product?search=${search}&page=${page - 1}&limit=${limit}`
+              'previousPage': page - 1,
+              'previousUrl': `http://localhost:4000/api/v1/product?search=${search}&page=${page - 1}&limit=${limit}`
             }
           }
 
           resultPage = {
-            'current page': page,
-            'per page': limit,
-            'total data': countSearch,
+            'currentPage': page,
+            'perPage': limit,
+            'totalData': countSearch,
             ...next,
             ...previous,
-            'first page': 1,
-            'last page': endPageSearch
+            'firstPage': 1,
+            'lastPage': endPageSearch
           }
 
           if (result.length > 0) {
             helper.response(res, resultPage, result, 200, null)
           } else {
-            helper.response(res, resultPage, 'Product Not Found', 200, null)
+            helper.response(res, resultPage, [], 200, null)
           }
         })
         .catch((err) => {
@@ -83,32 +83,32 @@ const product = {
         .then((result) => {
           if (end < countData) {
             next = {
-              'next page': page + 1,
-              'next url': `http://localhost:4000/api/v1/product?sort=${sort}&page=${page + 1}&limit=${limit}`
+              'nextPage': page + 1,
+              'nextUrl': `http://localhost:4000/api/v1/product?sort=${sort}&page=${page + 1}&limit=${limit}`
             }
           }
 
           if (offset > 0) {
             previous = {
-              'previous page': page - 1,
-              'previous url': `http://localhost:4000/api/v1/product?sort=${sort}&page=${page - 1}&limit=${limit}`
+              'previousPage': page - 1,
+              'previousUrl': `http://localhost:4000/api/v1/product?sort=${sort}&page=${page - 1}&limit=${limit}`
             }
           }
 
           resultPage = {
-            'current page': page,
-            'per page': limit,
-            'total data': countData,
+            'currentPage': page,
+            'perPage': limit,
+            'totalData': countData,
             ...next,
             ...previous,
-            'first page': 1,
-            'last page': endPage
+            'firstPage': 1,
+            'lastPage': endPage
           }
 
           if (result.length > 0) {
             helper.response(res, resultPage, result, 200, null)
           } else {
-            helper.response(res, resultPage, 'Product Not Found', 200, null)
+            helper.response(res, resultPage, [], 200, null)
           }
         })
         .catch((err) => {
@@ -119,32 +119,32 @@ const product = {
         .then((result) => {
           if (end < countData) {
             next = {
-              'next page': page + 1,
-              'next url': `http://localhost:4000/api/v1/product?page=${page + 1}&limit=${limit}`
+              'nextPage': page + 1,
+              'nextUrl': `http://localhost:4000/api/v1/product?page=${page + 1}&limit=${limit}`
             }
           }
 
           if (offset > 0) {
             previous = {
-              'previous page': page - 1,
-              'previous url': `http://localhost:4000/api/v1/product?page=${page - 1}&limit=${limit}`
+              'previousPage': page - 1,
+              'previousUrl': `http://localhost:4000/api/v1/product?page=${page - 1}&limit=${limit}`
             }
           }
 
           resultPage = {
-            'current page': page,
-            'per page': limit,
-            'total data': countData,
+            'currentPage': page,
+            'perPage': limit,
+            'totalData': countData,
             ...next,
             ...previous,
-            'first page': 1,
-            'last page': endPage
+            'firstPage': 1,
+            'lastPage': endPage
           }
 
           if (result.length > 0) {
             helper.response(res, resultPage, result, 200, null)
           } else {
-            helper.response(res, resultPage, 'Product Not Found', 200, null)
+            helper.response(res, resultPage, [], 200, null)
           }
         })
         .catch((err) => {
@@ -158,7 +158,7 @@ const product = {
       productModels.getProductById(id).then(result => {
         const product = result[0]
         const img = product.image.replace('http://localhost:4000/api/v1/uploads/', '')
-        const filePath = `./uploads/${img}`; 
+        const filePath = `./uploads/${img}`;
         fs.unlinkSync(filePath)
       })
 
@@ -182,7 +182,7 @@ const product = {
           console.log(err)
         })
     } else {
-      helper.res(res, 'Update Product is Not Allowed', 200, null)
+      helper.res(res, 'Update Product is Not Allowed', 403, null)
     }
   },
   deleteProduct: (req, res) => {
@@ -202,7 +202,7 @@ const product = {
           console.log(err)
         })
     } else {
-      helper.res(res, 'Delete Product is Not Allowed', 200, null)
+      helper.res(res, 'Delete Product is Not Allowed', 403, null)
     }
   },
   insertProduct: (req, res) => {
@@ -229,7 +229,7 @@ const product = {
           console.log(err)
         })
     } else {
-      helper.res(res, 'Insert Product is Not Allowed', 200, null)
+      helper.res(res, 'Insert Product is Not Allowed', 403, null)
     }
   }
 }

@@ -37,7 +37,7 @@ const product = {
   sortProduct: (sort, limit, offset) => {
     return new Promise((resolve, reject) => {
       let sortBy
-      if (sort === 'created_at') {
+      if (sort === 'createdAt') {
         sortBy = 'DESC'
       } else {
         sortBy = 'ASC'

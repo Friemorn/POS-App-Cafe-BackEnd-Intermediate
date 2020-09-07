@@ -14,7 +14,7 @@ const history = {
   },
   getAllHistory: () => {
     return new Promise((resolve, reject) => {
-      connection.query('SELECT * FROM history', (err, result) => {
+      connection.query(`SELECT idHistory, invoices, cashier, cashierName, DATE_FORMAT(date, '%e %M %Y') as date, orders, amount FROM history`, (err, result) => {
         if (!err) {
           resolve(result)
         } else {

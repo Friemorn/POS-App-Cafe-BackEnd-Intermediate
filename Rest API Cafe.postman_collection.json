@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "1fe24a34-b7a7-4368-8f49-84770a36a338",
-		"name": "Rest API Cafe",
+		"name": "Rest API Ufotable Cafe",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -65,7 +65,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product?page=1&limit=3",
+					"name": "http://localhost:4000/api/v1/product?page=1&limit=5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1235,6 +1235,157 @@
 						"description": "deleteHistory"
 					},
 					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "http://localhost:4000/api/v1/user/login",
+					"request": {
+						"auth": {
+							"type": "bearer"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "qwerty@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qwerty",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Dewondo",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastName",
+									"value": "Friemorn",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4000/api/v1/user/register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsImVtYWlsIjoicXdlcnR5QGdtYWlsLmNvbSIsInJvbGVJZCI6MiwiaWF0IjoxNTk4MDgyNDIzLCJleHAiOjE1OTgwODYwMjN9.IXlD693INOQd8p-FNW4kvtBR5euElLKAUyyKlw3cfUM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "qwerty@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qwerty",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Dewondo",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Friemorn",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"register"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "85c04e15-f059-475c-8c02-6c224ab8add3",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "773397a0-0cf3-4806-88d6-8cd7c47b5482",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
 				}
 			],
 			"protocolProfileBehavior": {}
