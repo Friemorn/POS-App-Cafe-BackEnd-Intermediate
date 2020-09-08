@@ -155,13 +155,6 @@ const product = {
   updateProduct: (req, res) => {
     if (req.roleId == '1') {
       const id = req.params.id
-      productModels.getProductById(id).then(result => {
-        const product = result[0]
-        const img = product.image.replace('http://localhost:4000/api/v1/uploads/', '')
-        const filePath = `./uploads/${img}`;
-        fs.unlinkSync(filePath)
-      })
-
       const {
         name,
         price,
@@ -169,10 +162,18 @@ const product = {
       } = req.body
       const data = {
         name,
-        image: `http://localhost:4000/api/v1/uploads/${req.file.filename}`,
         price,
         idCategory,
         updatedAt: new Date()
+      }
+      if (req.file) {
+        productModels.getProductById(id).then(result => {
+          const product = result[0]
+          const img = product.image.replace('http://localhost:4000/api/v1/uploads/', '')
+          const filePath = `./uploads/${img}`;
+          fs.unlinkSync(filePath)
+        })
+        data.image = `http://localhost:4000/api/v1/uploads/${req.file.filename}`
       }
       productModels.updateProduct(id, data)
         .then((result) => {
