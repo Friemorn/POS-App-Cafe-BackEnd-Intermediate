@@ -1,5 +1,10 @@
 # POS-App-Cafe-BackEnd
 
+### FLow of this REST API
+```
+Flowchart REST API Cafe.jpg 
+```
+
 ## Built With
 * [Node.js](https://nodejs.org/en/)
 * [Express.js](https://expressjs.com/)
@@ -7,6 +12,7 @@
 ## Requirements
 * [Node.js](https://nodejs.org/en/)
 * [Database](ufotable_cafe.sql)
++ [Postman](Rest API Cafe.postman_collection.json)
 
 ## Installation
 
@@ -41,26 +47,6 @@ npm run lint
 ### Use standard to fixes files
 ```
 standard --fix 
-```
-
-### FLow of this REST API
-```
-Flowchart REST API Cafe.jpg 
-```
-
-### Technology
-```
-Node.JS 
-```
-
-### Framework
-```
-Express.JS
-```
-
-### For testing you can using Postman and the collection files
-```
-Rest API Cafe.postman_collection.json
 ```
 
 ### Test Deployment Website
