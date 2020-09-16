@@ -1,6 +1,6 @@
 # POS-App-Cafe-BackEnd
 
-### FLow of this REST API
+## FLow of this REST API
 ```
 * [Flowchart](Flowchart REST API Cafe.jpg)
 ```
