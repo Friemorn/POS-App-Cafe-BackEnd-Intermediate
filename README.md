@@ -50,5 +50,9 @@ npm run lint
 standard --fix 
 ```
 
+## Contact
+
+If you want to contact me you can reach me at <dewondofriemorn.s4a@gmail.com>.
+
 ### Test Deployment Website
 [ufotablecafe.fwdev.online](http://ufotablecafe.fwdev.online/)
