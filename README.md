@@ -1,7 +1,7 @@
 # POS-App-Cafe-BackEnd
 
 ## FLow of this REST API
-* Flowchart REST API Cafe.jpg
+* [Flowchart](Flowchart_ufocafe.jpg)
 
 ## Built With
 * [Node.js](https://nodejs.org/en/)
@@ -10,7 +10,7 @@
 ## Requirements
 * [Node.js](https://nodejs.org/en/)
 * [Database](ufotable_cafe.sql)
-* Rest API Cafe.postman_collection.json
+* [Postman](Cafe.postman_collection.json)
 
 ## Installation
 
