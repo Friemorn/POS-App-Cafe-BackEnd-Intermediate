@@ -13,6 +13,7 @@
 * [Node.js](https://nodejs.org/en/)
 * [Database](ufotable_cafe.sql)
 * [Postman](Rest API Cafe.postman_collection.json)
+* [Flowchart](Flowchart REST API Cafe.jpg)
 
 ## Installation
 
