@@ -31,6 +31,9 @@ PORT_REDIS = 6379
 ## Installation
 
 Clone this repository and then use the package manager npm to install dependencies.
+```
+npm install
+```
 
 ### Compiles and hot-reloads for development
 ```
