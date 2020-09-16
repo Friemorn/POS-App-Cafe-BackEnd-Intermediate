@@ -1,5 +1,33 @@
 # POS-App-Cafe-BackEnd
 
+## Built With
+* [Node.js](https://nodejs.org/en/)
+* [Express.js](https://expressjs.com/)
+
+## Requirements
+* [Node.js](https://nodejs.org/en/)
+* [Database](ufotable_cafe.sql)
+
+## Installation
+
+Clone this repository and then use the package manager npm to install dependencies.
+
+## Setup .env example
+
+Create .env file in your root project folder.
+
+```env
+
+DB_HOST = localhost
+DB_USER = "your database username"
+DB_PASSWORD = "your database password"
+DB_DATABASE = ufotable_cafe
+PORT = "your port"
+SECRET_KEY = "your secret key"
+PORT_REDIS = 6379
+
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run dev
@@ -28,20 +56,6 @@ Node.JS
 ### Framework
 ```
 Express.JS
-```
-
-### NPM package for this app
-```
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.2",
-    "mysql2": "^2.1.0",
-    "redis": "^3.0.2"
 ```
 
 ### For testing you can using Postman and the collection files
