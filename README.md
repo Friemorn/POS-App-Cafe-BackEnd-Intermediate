@@ -2,7 +2,7 @@
 
 ### FLow of this REST API
 ```
-Flowchart REST API Cafe.jpg 
+* [Flowchart](Flowchart REST API Cafe.jpg )
 ```
 
 ## Built With
@@ -12,7 +12,7 @@ Flowchart REST API Cafe.jpg
 ## Requirements
 * [Node.js](https://nodejs.org/en/)
 * [Database](ufotable_cafe.sql)
-+ [Postman](Rest API Cafe.postman_collection.json)
+* [Postman](Rest API Cafe.postman_collection.json)
 
 ## Installation
 
