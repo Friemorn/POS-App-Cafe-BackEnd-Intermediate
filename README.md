@@ -1,7 +1,7 @@
 # POS-App-Cafe-BackEnd
 
 ## FLow of this REST API
-* [Flowchart](Flowchart_ufocafe.jpg)
+* [Flowchart](Flowchart_ ufocafe.jpg)
 
 ## Built With
 * [Node.js](https://nodejs.org/en/)
