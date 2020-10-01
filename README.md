@@ -12,10 +12,6 @@
 * [Database](ufotable_cafe.sql)
 * [Postman](Cafe.postman_collection.json)
 
-## Installation
-
-Clone this repository and then use the package manager npm to install dependencies.
-
 ## Setup .env example
 
 Create .env file in your root project folder.
@@ -32,6 +28,13 @@ PORT_REDIS = 6379
 
 ```
 
+## Installation
+
+Clone this repository and then use the package manager npm to install dependencies.
+```
+npm install
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run dev
@@ -46,6 +49,10 @@ npm run lint
 ```
 standard --fix 
 ```
+
+## Contact
+
+If you want to contact me you can reach me at <dewondofriemorn.s4a@gmail.com>.
 
 ### Test Deployment Website
 [ufotablecafe.fwdev.online](http://ufotablecafe.fwdev.online/)
