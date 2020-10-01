@@ -48,14 +48,14 @@ const product = {
           if (end < countSearch) {
             next = {
               'nextPage': page + 1,
-              'nextUrl': `http://localhost:4000/api/v1/product?search=${search}&page=${page + 1}&limit=${limit}`
+              'nextUrl': process.env.BASE_URL+`/product?search=${search}&page=${page + 1}&limit=${limit}`
             }
           }
 
           if (offset > 0) {
             previous = {
               'previousPage': page - 1,
-              'previousUrl': `http://localhost:4000/api/v1/product?search=${search}&page=${page - 1}&limit=${limit}`
+              'previousUrl': process.env.BASE_URL+`/product?search=${search}&page=${page - 1}&limit=${limit}`
             }
           }
 
@@ -84,14 +84,14 @@ const product = {
           if (end < countData) {
             next = {
               'nextPage': page + 1,
-              'nextUrl': `http://localhost:4000/api/v1/product?sort=${sort}&page=${page + 1}&limit=${limit}`
+              'nextUrl': process.env.BASE_URL+`/product?sort=${sort}&page=${page + 1}&limit=${limit}`
             }
           }
 
           if (offset > 0) {
             previous = {
               'previousPage': page - 1,
-              'previousUrl': `http://localhost:4000/api/v1/product?sort=${sort}&page=${page - 1}&limit=${limit}`
+              'previousUrl': process.env.BASE_URL+`/product?sort=${sort}&page=${page - 1}&limit=${limit}`
             }
           }
 
@@ -120,14 +120,14 @@ const product = {
           if (end < countData) {
             next = {
               'nextPage': page + 1,
-              'nextUrl': `http://localhost:4000/api/v1/product?page=${page + 1}&limit=${limit}`
+              'nextUrl': process.env.BASE_URL+`/product?page=${page + 1}&limit=${limit}`
             }
           }
 
           if (offset > 0) {
             previous = {
               'previousPage': page - 1,
-              'previousUrl': `http://localhost:4000/api/v1/product?page=${page - 1}&limit=${limit}`
+              'previousUrl': process.env.BASE_URL+`/product?page=${page - 1}&limit=${limit}`
             }
           }
 
@@ -169,11 +169,11 @@ const product = {
       if (req.file) {
         productModels.getProductById(id).then(result => {
           const product = result[0]
-          const img = product.image.replace('http://localhost:4000/api/v1/uploads/', '')
+          const img = product.image.replace(process.env.BASE_URL+'/uploads/', '')
           const filePath = `./uploads/${img}`;
           fs.unlinkSync(filePath)
         })
-        data.image = `http://localhost:4000/api/v1/uploads/${req.file.filename}`
+        data.image = process.env.BASE_URL+`/uploads/${req.file.filename}`
       }
       productModels.updateProduct(id, data)
         .then((result) => {
@@ -191,7 +191,7 @@ const product = {
       const id = req.params.id
       productModels.getProductById(id).then(result => {
         const product = result[0]
-        const img = product.image.replace('http://localhost:4000/api/v1/uploads/', '')
+        const img = product.image.replace(process.env.BASE_URL+'/uploads/', '')
         const filePath = `./uploads/${img}`
         fs.unlinkSync(filePath)
       })
@@ -215,7 +215,7 @@ const product = {
       } = req.body
       const data = {
         name,
-        image: `http://localhost:4000/api/v1/uploads/${req.file.filename}`,
+        image: process.env.BASE_URL+`/uploads/${req.file.filename}`,
         price,
         idCategory,
         createdAt: new Date(),
