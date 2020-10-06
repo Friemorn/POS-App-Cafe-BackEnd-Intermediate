@@ -3,6 +3,7 @@ const productRoutes = require('./product')
 const categoryRoutes = require('./category')
 const historyRoutes = require('./history')
 const userRoutes = require('./user')
+const emailRoutes = require('./email')
 
 const router = express.Router()
 
@@ -11,5 +12,6 @@ router
   .use('/category', categoryRoutes)
   .use('/history', historyRoutes)
   .use('/user', userRoutes)
+  .use('/email', emailRoutes)
 
 module.exports = router

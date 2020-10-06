@@ -9,7 +9,7 @@
 			"name": "Product",
 			"item": [
 				{
-					"name": "http://localhost:4000/api/v1/product/1",
+					"name": "Get Product By Id",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -47,12 +47,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product/1",
+							"raw": "http://localhost:5000/api/v1/product/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -65,7 +65,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product?page=1&limit=5",
+					"name": "Get All Product",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -103,12 +103,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product?search=latte&page=1&limit=5",
+							"raw": "http://localhost:5000/api/v1/product?search=latte&page=1&limit=5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -134,7 +134,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product?search=latte&page=1&limit=3",
+					"name": "Search Product By Name",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -172,12 +172,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product?search=latte&page=1&limit=5",
+							"raw": "http://localhost:5000/api/v1/product?search=latte&page=1&limit=5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -203,7 +203,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product?sort=name&page=1&limit=3",
+					"name": "Sort Product By Name",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -241,12 +241,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product?sort=name&page=1&limit=5",
+							"raw": "http://localhost:5000/api/v1/product?sort=name&page=1&limit=5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -272,7 +272,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product?sort=categoryName&page=1&limit=3",
+					"name": "Sort Product By Category",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -310,12 +310,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product?sort=category_name&page=1&limit=5",
+							"raw": "http://localhost:5000/api/v1/product?sort=category_name&page=1&limit=5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -341,7 +341,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product?sort=createdAt&page=1&limit=3",
+					"name": "Sort Product By New",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -379,12 +379,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product?sort=category_name&page=1&limit=5",
+							"raw": "http://localhost:5000/api/v1/product?sort=category_name&page=1&limit=5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -410,7 +410,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product?sort=price&page=1&limit=3",
+					"name": "Sort Product By Price",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -448,12 +448,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product?sort=price&page=1&limit=5",
+							"raw": "http://localhost:5000/api/v1/product?sort=price&page=1&limit=5",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -479,7 +479,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product/",
+					"name": "Insert Product",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -519,12 +519,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product/",
+							"raw": "http://localhost:5000/api/v1/product/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -537,7 +537,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product/10",
+					"name": "Update Product",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -577,12 +577,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product/10",
+							"raw": "http://localhost:5000/api/v1/product/10",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -595,7 +595,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/product/10",
+					"name": "Delete Product",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -635,12 +635,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/product/10",
+							"raw": "http://localhost:5000/api/v1/product/10",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -659,7 +659,7 @@
 			"name": "Category",
 			"item": [
 				{
-					"name": "http://localhost:4000/api/v1/category/",
+					"name": "Get All Category",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -697,12 +697,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/category/",
+							"raw": "http://localhost:5000/api/v1/category/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -715,7 +715,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/category/1",
+					"name": "Get Category By Id",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -753,12 +753,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/category/1",
+							"raw": "http://localhost:5000/api/v1/category/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -771,7 +771,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/category/",
+					"name": "Insert Category",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -809,12 +809,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/category/",
+							"raw": "http://localhost:5000/api/v1/category/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -827,7 +827,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/category/4",
+					"name": "Update Category",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -865,12 +865,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/category/4",
+							"raw": "http://localhost:5000/api/v1/category/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -883,7 +883,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/category/4",
+					"name": "Delete Category",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -921,12 +921,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/category/4",
+							"raw": "http://localhost:5000/api/v1/category/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -945,7 +945,7 @@
 			"name": "History",
 			"item": [
 				{
-					"name": "http://localhost:4000/api/v1/history/",
+					"name": "Get All History",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -986,12 +986,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/history/",
+							"raw": "http://localhost:5000/api/v1/history/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -1004,7 +1004,247 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/history/1",
+					"name": "Get History By Month",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/month/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"month",
+								"10"
+							]
+						},
+						"description": "getHistoryByMonth"
+					},
+					"response": []
+				},
+				{
+					"name": "Get History Today",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/today",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"today"
+							]
+						},
+						"description": "getHistoryToday"
+					},
+					"response": []
+				},
+				{
+					"name": "Get History This Month",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/thisMonth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"thisMonth"
+							]
+						},
+						"description": "getHistoryThisMonth"
+					},
+					"response": []
+				},
+				{
+					"name": "Get History This Year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/thisYear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"thisYear"
+							]
+						},
+						"description": "getHistoryThisYear"
+					},
+					"response": []
+				},
+				{
+					"name": "Ge tTodays Income",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/todaysIncome",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"todaysIncome"
+							]
+						},
+						"description": "getTodaysIncome"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Yesterdays Income",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/yesterdaysIncome",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"yesterdaysIncome"
+							]
+						},
+						"description": "getYesterdaysIncome"
+					},
+					"response": []
+				},
+				{
+					"name": "Get This Week Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/thisWeekOrders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"thisWeekOrders"
+							]
+						},
+						"description": "getThisWeekOrders"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Last Week Orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/lastWeekOrders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"lastWeekOrders"
+							]
+						},
+						"description": "getLastWeekOrders"
+					},
+					"response": []
+				},
+				{
+					"name": "Get This Years Income",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/thisYearsIncome",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"thisYearsIncome"
+							]
+						},
+						"description": "getThisYearsIncome"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Last Years Income",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/history/date/lastYearsIncome",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"history",
+								"date",
+								"lastYearsIncome"
+							]
+						},
+						"description": "getLastYearsIncome"
+					},
+					"response": []
+				},
+				{
+					"name": "Get History By Id",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1045,12 +1285,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/history/1",
+							"raw": "http://localhost:5000/api/v1/history/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -1063,7 +1303,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/history/1",
+					"name": "Insert History",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -1103,12 +1343,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/history/",
+							"raw": "http://localhost:5000/api/v1/history/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -1121,7 +1361,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/history/4",
+					"name": "Update History",
 					"request": {
 						"method": "PATCH",
 						"header": [],
@@ -1161,12 +1401,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/history/4",
+							"raw": "http://localhost:5000/api/v1/history/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -1179,7 +1419,7 @@
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/history/4",
+					"name": "Delete History",
 					"request": {
 						"method": "DELETE",
 						"header": [],
@@ -1219,12 +1459,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/history/4",
+							"raw": "http://localhost:5000/api/v1/history/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -1243,7 +1483,7 @@
 			"name": "User",
 			"item": [
 				{
-					"name": "http://localhost:4000/api/v1/user/login",
+					"name": "Login",
 					"request": {
 						"auth": {
 							"type": "bearer"
@@ -1278,12 +1518,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/user/login",
+							"raw": "http://localhost:5000/api/v1/user/login",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -1297,12 +1537,13 @@
 									"disabled": true
 								}
 							]
-						}
+						},
+						"description": "Login"
 					},
 					"response": []
 				},
 				{
-					"name": "http://localhost:4000/api/v1/user/register",
+					"name": "Register",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -1342,12 +1583,12 @@
 							]
 						},
 						"url": {
-							"raw": "http://localhost:4000/api/v1/user/register",
+							"raw": "http://localhost:5000/api/v1/user/register",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "4000",
+							"port": "5000",
 							"path": [
 								"api",
 								"v1",
@@ -1361,7 +1602,8 @@
 									"disabled": true
 								}
 							]
-						}
+						},
+						"description": "Register"
 					},
 					"response": []
 				}
@@ -1386,6 +1628,66 @@
 							""
 						]
 					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Email",
+			"item": [
+				{
+					"name": "Email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "to",
+									"value": "dewondofriemorn.s4a@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "order",
+									"value": "order",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/email/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"email",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}

@@ -9,7 +9,138 @@ const history = {
         if (result.length > 0) {
           helper.res(res, result, 200, null)
         } else {
-          helper.res(res, 'History Not Found', 200, null)
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getHistoryByMonth: (req, res) => {
+    const month = req.params.month
+    historyModels.getHistoryByMonth(month)
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getHistoryToday: (req, res) => {
+    historyModels.getHistoryToday()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getHistoryThisMonth: (req, res) => {
+    historyModels.getHistoryThisMonth()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getHistoryThisYear: (req, res) => {
+    historyModels.getHistoryThisYear()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getTodaysIncome: (req, res) => {
+    historyModels.getTodaysIncome()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getYesterdaysIncome: (req, res) => {
+    historyModels.getYesterdaysIncome()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getThisWeekOrders: (req, res) => {
+    historyModels.getThisWeekOrders()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getLastWeekOrders: (req, res) => {
+    historyModels.getLastWeekOrders()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getThisYearsIncome: (req, res) => {
+    historyModels.getThisYearsIncome()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  },
+  getLastYearsIncome: (req, res) => {
+    historyModels.getLastYearsIncome()
+      .then((result) => {
+        if (result.length > 0) {
+          helper.res(res, result, 200, null)
+        } else {
+          helper.res(res, [], 200, null)
         }
       })
       .catch((err) => {
@@ -22,7 +153,7 @@ const history = {
         if (result.length > 0) {
           helper.res(res, result, 200, null)
         } else {
-          helper.res(res, 'History Not Found', 200, null)
+          helper.res(res, [], 200, null)
         }
       })
       .catch((err) => {
