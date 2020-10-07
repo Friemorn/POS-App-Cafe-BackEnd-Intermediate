@@ -16,7 +16,7 @@
 * [Database](ufotable_cafe.sql)
 * [Postman](Cafe.postman_collection.json)
 
-## npm package
+## NPM Package
 * [Bcryptjs](https://www.npmjs.com/package/bcryptjs)
 * [Body-parser](https://www.npmjs.com/package/body-parser)
 * [Cors](https://www.npmjs.com/package/cors)
