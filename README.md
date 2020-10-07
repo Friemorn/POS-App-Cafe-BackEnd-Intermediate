@@ -1,9 +1,9 @@
 # POS-App-Cafe-BackEnd
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Friemorn/README-template.md)
-![GitHub contributors](https://img.shields.io/github/Friemorn/scottydocs/README-template.md)
-![GitHub stars](https://img.shields.io/github/stars/Friemorn/README-template.md?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Friemorn/README-template.md?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/Friemorn/README.md)
+![GitHub contributors](https://img.shields.io/github/Friemorn/scottydocs/README.md)
+![GitHub stars](https://img.shields.io/github/stars/Friemorn/README.md?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Friemorn/README.md?style=social)
 
 ## FLow of this REST API
 * [Flowchart](Flowchart_ufocafe.jpg)
