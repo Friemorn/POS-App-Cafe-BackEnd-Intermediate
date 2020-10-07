@@ -22,25 +22,59 @@ module.exports = {
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>coba saja</title>
                     <style>
-                        .container{
-                            height: 200px;
-                            width: 400px;
-                            margin-right: auto;
-                            margin-left: auto;
-                            background-color: rebeccapurple;
-                            box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
-                        }
-                        .container h1{
-                            color: red;
-                        }
+                    .container{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                    table {
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    .header{
+                        padding: 20px;
+                        background-color: #57CAD5;
+                        color: white;
+                    }
+                    th {
+                        font-size: 18px;
+                    }
+                    td{
+                        border-bottom: 1px solid grey;
+                    }
                     </style>
                 </head>
                 <body>
                     <div class="container">
-                        <h1>${data.order}</h1>
+                    <table id="table-checkout-total" border="0" cellspacing="0" cellpadding="10">
+                        <tr>
+                            <th class="header" colspan="2">UFOCAFE</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Halo ${data.order.name} <br>
+                            Order is Success</th>
+                        </tr>
+                        <tr>
+                            <td>No. Invoices</td>
+                            <td>${data.order.invoices}</td>
+                        </tr>
+                        <tr>
+                            <td>Orders</td>
+                            <td>${data.order.orders}</td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>Rp. ${String(data.order.amount).replace(/(.)(?=(\d{3})+$)/g, '$1.')}</td>
+                        </tr>
+                    </table>
                     </div>
                 </body>
-                </html>`
+                </html>
+                `
             }
             transporter.sendMail(mailOptions, (err, info) =>{
                 if(err){

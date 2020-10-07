@@ -1,5 +1,10 @@
 # POS-App-Cafe-BackEnd
 
+![GitHub repo size](https://img.shields.io/github/repo-size/Friemorn/README-template.md)
+![GitHub contributors](https://img.shields.io/github/Friemorn/scottydocs/README-template.md)
+![GitHub stars](https://img.shields.io/github/stars/Friemorn/README-template.md?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Friemorn/README-template.md?style=social)
+
 ## FLow of this REST API
 * [Flowchart](Flowchart_ufocafe.jpg)
 
@@ -11,6 +16,19 @@
 * [Node.js](https://nodejs.org/en/)
 * [Database](ufotable_cafe.sql)
 * [Postman](Cafe.postman_collection.json)
+
+## npm package
+* [Bcryptjs](https://www.npmjs.com/package/bcryptjs)
+* [Body-parser](https://www.npmjs.com/package/body-parser)
+* [Cors](https://www.npmjs.com/package/cors)
+* [Dotenv](https://www.npmjs.com/package/dotenv)
+* [Express](https://www.npmjs.com/package/express)
+* [Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+* [Morgan](https://www.npmjs.com/package/morgan)
+* [Multer](https://www.npmjs.com/package/multer)
+* [Mysql2](https://www.npmjs.com/package/mysql2)
+* [Nodemailer](https://www.npmjs.com/package/nodemailer)
+* [Redis](https://www.npmjs.com/package/redis)
 
 ## Setup .env example
 

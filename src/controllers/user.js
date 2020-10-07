@@ -8,6 +8,7 @@ module.exports = {
     const { email, password, firstName, lastName } = req.body
     const isUser = await userModels.getUserbyEmail(email)
     if (isUser.length !== 0) return helper.res(res, { message: 'Email is Already Registered' }, 403, null)
+    if (password.length <8) return helper.res(res, { message: 'Password must have at least 8 character!' }, 403, null)
     const data = {
       email,
       password,
