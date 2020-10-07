@@ -42,6 +42,9 @@ DB_DATABASE = ufotable_cafe
 PORT = "your port"
 SECRET_KEY = "your secret key"
 PORT_REDIS = 6379
+BASE_URL = "your url"
+EMAIL = "your email"
+EMAIL_PASSWORD = "your password email"
 
 ```
 
