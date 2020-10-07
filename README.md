@@ -69,6 +69,19 @@ standard --fix
 
 ## Contact
 
+<center>
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/Friemorn">
+          <img width="100" src="https://avatars1.githubusercontent.com/u/65410346?s=460&u=ab96d95c5664d273344a00a474463c811e77d0c9&v=4" alt="DF"><br/>
+          <sub><b>Dewondo Friemorn</b></sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+</center>
+
 If you want to contact me you can reach me at <dewondofriemorn.s4a@gmail.com>.
 
 ### Test Deployment Website
